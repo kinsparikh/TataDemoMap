@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetViewController" customModule="TataMapDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAuto" destination="MV0-r4-tgC" id="jpn-Up-ZOf"/>
+                <outlet property="btnPooling" destination="454-Hc-7N9" id="guM-92-hAR"/>
+                <outlet property="btnTaxi" destination="ql3-bg-HHW" id="6fV-Yc-MbH"/>
+                <outlet property="imgArrow" destination="c3h-Cy-trk" id="V3U-NK-ujD"/>
+                <outlet property="svCar" destination="eKJ-KQ-VKy" id="8Ro-wx-Rb4"/>
+                <outlet property="tblVehicles" destination="n4s-H8-T0K" id="kQh-dI-aXs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="528"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pullArrowUp" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-Cy-trk">
+                    <rect key="frame" x="152" y="12" width="64" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="Feg-8C-TsW"/>
+                        <constraint firstAttribute="height" constant="12" id="wZk-Ma-E8I"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="g8L-L0-HDu">
+                    <rect key="frame" x="10" y="32" width="348" height="55"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eKJ-KQ-VKy">
+                            <rect key="frame" x="0.0" y="0.0" width="348" height="55"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YvZ-IG-oHm">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="55"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql3-bg-HHW">
+                                            <rect key="frame" x="0.0" y="0.0" width="116" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="sP2-Z2-Vdd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                            <state key="normal" image="cabNew">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <state key="selected">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHl-ZI-qc5">
+                                            <rect key="frame" x="0.0" y="37" width="116" height="18"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qXf-vW-lle">
+                                    <rect key="frame" x="116" y="0.0" width="116" height="55"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="454-Hc-7N9">
+                                            <rect key="frame" x="0.0" y="0.0" width="116" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="dUS-oO-vFb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                            <state key="normal" image="carPool">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <state key="selected">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJ0-ya-taR">
+                                            <rect key="frame" x="0.0" y="35" width="116" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a8q-gl-LZy">
+                                    <rect key="frame" x="232" y="0.0" width="116" height="55"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MV0-r4-tgC">
+                                            <rect key="frame" x="0.0" y="0.0" width="116" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="qv4-SH-LFg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                            <state key="normal" image="rickshaw">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <state key="selected">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Auto Rikshaw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLS-Aa-UsI">
+                                            <rect key="frame" x="0.0" y="35" width="116" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="nho-g8-Zlq"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n4s-H8-T0K">
+                    <rect key="frame" x="10" y="95" width="348" height="400"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="YcS-Ih-eaw"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="c3h-Cy-trk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9rr-1o-rHc"/>
+                <constraint firstAttribute="trailing" secondItem="n4s-H8-T0K" secondAttribute="trailing" constant="10" id="DsF-Uq-Upi"/>
+                <constraint firstItem="g8L-L0-HDu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="QpF-fK-PMf"/>
+                <constraint firstItem="n4s-H8-T0K" firstAttribute="top" secondItem="g8L-L0-HDu" secondAttribute="bottom" constant="8" symbolic="YES" id="a7Z-km-S0D"/>
+                <constraint firstItem="c3h-Cy-trk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="gpP-bI-2kU"/>
+                <constraint firstItem="n4s-H8-T0K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="rRK-8u-Z2z"/>
+                <constraint firstAttribute="trailing" secondItem="g8L-L0-HDu" secondAttribute="trailing" constant="10" id="svd-Tv-gmz"/>
+                <constraint firstItem="g8L-L0-HDu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="zqH-d1-4FH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="151.875" y="24.295774647887324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cabNew" width="37.5" height="37.5"/>
+        <image name="carPool" width="37.5" height="37.5"/>
+        <image name="pullArrowUp" width="50" height="16"/>
+        <image name="rickshaw" width="37.5" height="37.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

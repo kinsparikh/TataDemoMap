@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5rK-Jn-u45">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TataMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6SW-DM-u9f">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmployeeTableViewCell" rowHeight="70" id="kz0-Kz-c7W" customClass="EmployeeTableViewCell" customModule="TataMapDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kz0-Kz-c7W" id="CX4-Fj-TMM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unh-mc-q5z">
+                                                    <rect key="frame" x="25" y="11" width="364" height="21"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlz-Z9-vpZ">
+                                                    <rect key="frame" x="25" y="37" width="364" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="9Em-e6-gR1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Unh-mc-q5z" secondAttribute="trailing" constant="5" id="0m2-wY-dCy"/>
+                                                <constraint firstItem="Rlz-Z9-vpZ" firstAttribute="leading" secondItem="CX4-Fj-TMM" secondAttribute="leadingMargin" constant="5" id="GEx-XD-M3H"/>
+                                                <constraint firstItem="Unh-mc-q5z" firstAttribute="top" secondItem="CX4-Fj-TMM" secondAttribute="topMargin" id="LDX-j1-ZfP"/>
+                                                <constraint firstItem="Unh-mc-q5z" firstAttribute="leading" secondItem="CX4-Fj-TMM" secondAttribute="leadingMargin" constant="5" id="NaC-ZH-zuu"/>
+                                                <constraint firstItem="Rlz-Z9-vpZ" firstAttribute="top" secondItem="Unh-mc-q5z" secondAttribute="bottom" constant="5" id="YJ6-qO-2bX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rlz-Z9-vpZ" secondAttribute="trailing" constant="5" id="iQo-iq-z1D"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="employeeIdLabel" destination="Unh-mc-q5z" id="nrB-If-IVM"/>
+                                            <outlet property="employeeNameLabel" destination="Rlz-Z9-vpZ" id="c6k-4l-VbG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6SW-DM-u9f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2VY-od-CXB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6SW-DM-u9f" secondAttribute="trailing" id="HGO-nF-uKj"/>
+                            <constraint firstItem="6SW-DM-u9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HjJ-un-g7B"/>
+                            <constraint firstItem="6SW-DM-u9f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ocl-kC-Kuu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="employeeTableView" destination="6SW-DM-u9f" id="BSU-Od-qj4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="115.17857142857142"/>
+        </scene>
+        <!--Google MapVC-->
+        <scene sceneID="Cux-AW-xJJ">
+            <objects>
+                <viewController storyboardIdentifier="GoogleMapVC" id="5rK-Jn-u45" customClass="GoogleMapVC" customModule="TataMapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UIa-ua-VaE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hd7-7z-PSN" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="901"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yP4-ia-qgy">
+                                <rect key="frame" x="34" y="104" width="346" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinMarker" translatesAutoresizingMaskIntoConstraints="NO" id="s8w-nv-EbV">
+                                <rect key="frame" x="187" y="428" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="cad-cv-l2r"/>
+                                    <constraint firstAttribute="height" constant="40" id="iDq-ZB-g60"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wrz-Ow-xBP"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hd7-7z-PSN" firstAttribute="centerY" secondItem="Wrz-Ow-xBP" secondAttribute="centerY" constant="-2.5" id="64c-6T-Snv"/>
+                            <constraint firstItem="s8w-nv-EbV" firstAttribute="centerX" secondItem="UIa-ua-VaE" secondAttribute="centerX" id="9TP-lw-DUJ"/>
+                            <constraint firstItem="hd7-7z-PSN" firstAttribute="width" secondItem="UIa-ua-VaE" secondAttribute="width" id="Asa-tq-MdL"/>
+                            <constraint firstItem="yP4-ia-qgy" firstAttribute="leading" secondItem="Wrz-Ow-xBP" secondAttribute="leading" constant="34" id="CrJ-uf-qTF"/>
+                            <constraint firstItem="yP4-ia-qgy" firstAttribute="centerX" secondItem="hd7-7z-PSN" secondAttribute="centerX" id="GSn-SQ-58M"/>
+                            <constraint firstItem="s8w-nv-EbV" firstAttribute="centerY" secondItem="UIa-ua-VaE" secondAttribute="centerY" id="d13-53-sQi"/>
+                            <constraint firstItem="yP4-ia-qgy" firstAttribute="top" secondItem="Wrz-Ow-xBP" secondAttribute="top" constant="60" id="f5d-KX-TQU"/>
+                            <constraint firstItem="hd7-7z-PSN" firstAttribute="centerX" secondItem="Wrz-Ow-xBP" secondAttribute="centerX" id="hRm-6J-EMX"/>
+                            <constraint firstItem="hd7-7z-PSN" firstAttribute="height" secondItem="UIa-ua-VaE" secondAttribute="height" constant="5" id="zTq-1l-ckw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="hd7-7z-PSN" id="WGP-et-bwR"/>
+                        <outlet property="pinImage" destination="s8w-nv-EbV" id="NkI-Wy-Dgf"/>
+                        <outlet property="searchField" destination="yP4-ia-qgy" id="TYr-h2-uAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaG-db-jlx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1559.4202898550725" y="170.75892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PinMarker" width="37.5" height="37.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

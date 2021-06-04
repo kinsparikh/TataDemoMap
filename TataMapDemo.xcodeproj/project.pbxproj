@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700AF9F12668C63D008E73EA /* EmployeeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AF9DD2668C63D008E73EA /* EmployeeTableViewDataSource.swift */; };
+		700AF9F22668C63D008E73EA /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AF9DE2668C63D008E73EA /* EmployeesViewModel.swift */; };
+		700AF9F32668C63D008E73EA /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AF9E02668C63D008E73EA /* EmployeeTableViewCell.swift */; };
+		700AF9F42668C63D008E73EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700AF9E12668C63D008E73EA /* Assets.xcassets */; };
+		700AF9F52668C63D008E73EA /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AF9E32668C63D008E73EA /* Employee.swift */; };
+		700AF9F62668C63D008E73EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700AF9E42668C63D008E73EA /* LaunchScreen.storyboard */; };
+		700AF9F72668C63D008E73EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700AF9E62668C63D008E73EA /* Main.storyboard */; };
+		700AF9F82668C63D008E73EA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AF9E92668C63D008E73EA /* APIService.swift */; };
+		700AF9F92668C63D008E73EA /* DummyLatLong.json in Resources */ = {isa = PBXBuildFile; fileRef = 700AF9EB2668C63D008E73EA /* DummyLatLong.json */; };
+		700AF9FA2668C63D008E73EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AF9EC2668C63D008E73EA /* AppDelegate.swift */; };
+		700AF9FB2668C63D008E73EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AF9ED2668C63D008E73EA /* SceneDelegate.swift */; };
+		700AF9FC2668C63D008E73EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AF9EF2668C63D008E73EA /* ViewController.swift */; };
+		70B498372668D67C00988C7B /* MapModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B498362668D67C00988C7B /* MapModelData.swift */; };
+		70B498392668D72B00988C7B /* GoogleMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B498382668D72B00988C7B /* GoogleMapVC.swift */; };
+		70B4983B2668D94A00988C7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B4983A2668D94A00988C7B /* Constants.swift */; };
+		70B4983D2668E0D600988C7B /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B4983C2668E0D600988C7B /* MapsViewModel.swift */; };
+		70B4983F2668E3FD00988C7B /* MapsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B4983E2668E3FD00988C7B /* MapsDataSource.swift */; };
+		70B4984126691E0A00988C7B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B4984026691E0A00988C7B /* SwiftyJSON.swift */; };
+		70B4984326692E5300988C7B /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 70B4984226692E5300988C7B /* style.json */; };
+		70B4984526693C9B00988C7B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B4984426693C9B00988C7B /* UIViewControllerExtension.swift */; };
+		70B4984826694F2200988C7B /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70B4984626694F2200988C7B /* BottomSheetViewController.xib */; };
+		70B4984A2669509900988C7B /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B498492669509900988C7B /* BottomSheetViewController.swift */; };
+		70B4984F2669DAB200988C7B /* ListOfVehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70B4984D2669DAB200988C7B /* ListOfVehicleCell.xib */; };
+		70B498512669DB1D00988C7B /* ListOfVehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B498502669DB1D00988C7B /* ListOfVehicleCell.swift */; };
+		70B498562669E1AD00988C7B /* AnimatorTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B498532669E1AD00988C7B /* AnimatorTVC.swift */; };
+		70B498572669E1AD00988C7B /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B498542669E1AD00988C7B /* UITableView+Ext.swift */; };
+		70B498582669E1AD00988C7B /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B498552669E1AD00988C7B /* Animations.swift */; };
+		70B498622669ED4700988C7B /* TataMapDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B498612669ED4700988C7B /* TataMapDemoTests.swift */; };
+		865A6991E1CEB2CEDE76B674 /* Pods_TataMapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458A54807801113F5B3D053F /* Pods_TataMapDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70B498642669ED4700988C7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 388A2FE224755072003E4341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 388A2FE924755072003E4341;
+			remoteInfo = TataMapDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		388A2FEA24755072003E4341 /* TataMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TataMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		458A54807801113F5B3D053F /* Pods_TataMapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TataMapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		700AF9DD2668C63D008E73EA /* EmployeeTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewDataSource.swift; sourceTree = "<group>"; };
+		700AF9DE2668C63D008E73EA /* EmployeesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
+		700AF9E02668C63D008E73EA /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		700AF9E12668C63D008E73EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		700AF9E32668C63D008E73EA /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		700AF9E52668C63D008E73EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		700AF9E72668C63D008E73EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		700AF9E92668C63D008E73EA /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		700AF9EB2668C63D008E73EA /* DummyLatLong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DummyLatLong.json; sourceTree = "<group>"; };
+		700AF9EC2668C63D008E73EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		700AF9ED2668C63D008E73EA /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		700AF9EF2668C63D008E73EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		700AF9F02668C63D008E73EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B498362668D67C00988C7B /* MapModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModelData.swift; sourceTree = "<group>"; };
+		70B498382668D72B00988C7B /* GoogleMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapVC.swift; sourceTree = "<group>"; };
+		70B4983A2668D94A00988C7B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		70B4983C2668E0D600988C7B /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
+		70B4983E2668E3FD00988C7B /* MapsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsDataSource.swift; sourceTree = "<group>"; };
+		70B4984026691E0A00988C7B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		70B4984226692E5300988C7B /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		70B4984426693C9B00988C7B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		70B4984726694F2200988C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BottomSheetViewController.xib; sourceTree = "<group>"; };
+		70B498492669509900988C7B /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		70B4984E2669DAB200988C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListOfVehicleCell.xib; sourceTree = "<group>"; };
+		70B498502669DB1D00988C7B /* ListOfVehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfVehicleCell.swift; sourceTree = "<group>"; };
+		70B498532669E1AD00988C7B /* AnimatorTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorTVC.swift; sourceTree = "<group>"; };
+		70B498542669E1AD00988C7B /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		70B498552669E1AD00988C7B /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		70B4985F2669ED4700988C7B /* TataMapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TataMapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B498612669ED4700988C7B /* TataMapDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TataMapDemoTests.swift; sourceTree = "<group>"; };
+		70B498632669ED4700988C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EDC35DA53B183A1BC27466F /* Pods-TataMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TataMapDemo.release.xcconfig"; path = "Target Support Files/Pods-TataMapDemo/Pods-TataMapDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C66F771946D949E98F0457EE /* Pods-TataMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TataMapDemo.debug.xcconfig"; path = "Target Support Files/Pods-TataMapDemo/Pods-TataMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		388A2FE724755072003E4341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				865A6991E1CEB2CEDE76B674 /* Pods_TataMapDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B4985C2669ED4700988C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		168DAF47DDB31D3BBAA5161B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				458A54807801113F5B3D053F /* Pods_TataMapDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		388A2FE124755072003E4341 = {
+			isa = PBXGroup;
+			children = (
+				700AF9DB2668C63D008E73EA /* MapDemo */,
+				70B498602669ED4700988C7B /* TataMapDemoTests */,
+				388A2FEB24755072003E4341 /* Products */,
+				9108B3DC7182FF05120B8928 /* Pods */,
+				168DAF47DDB31D3BBAA5161B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		388A2FEB24755072003E4341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				388A2FEA24755072003E4341 /* TataMapDemo.app */,
+				70B4985F2669ED4700988C7B /* TataMapDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		700AF9DB2668C63D008E73EA /* MapDemo */ = {
+			isa = PBXGroup;
+			children = (
+				700AF9DC2668C63D008E73EA /* ViewModels */,
+				700AF9DF2668C63D008E73EA /* TableViewCells */,
+				700AF9E12668C63D008E73EA /* Assets.xcassets */,
+				700AF9E22668C63D008E73EA /* Models */,
+				700AF9E42668C63D008E73EA /* LaunchScreen.storyboard */,
+				70B4984D2669DAB200988C7B /* ListOfVehicleCell.xib */,
+				700AF9E62668C63D008E73EA /* Main.storyboard */,
+				70B4984626694F2200988C7B /* BottomSheetViewController.xib */,
+				700AF9E82668C63D008E73EA /* WebService */,
+				700AF9EA2668C63D008E73EA /* common */,
+				700AF9EE2668C63D008E73EA /* Controllers */,
+				700AF9F02668C63D008E73EA /* Info.plist */,
+			);
+			path = MapDemo;
+			sourceTree = "<group>";
+		};
+		700AF9DC2668C63D008E73EA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				700AF9DD2668C63D008E73EA /* EmployeeTableViewDataSource.swift */,
+				70B4983E2668E3FD00988C7B /* MapsDataSource.swift */,
+				700AF9DE2668C63D008E73EA /* EmployeesViewModel.swift */,
+				70B4983C2668E0D600988C7B /* MapsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		700AF9DF2668C63D008E73EA /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				700AF9E02668C63D008E73EA /* EmployeeTableViewCell.swift */,
+				70B498502669DB1D00988C7B /* ListOfVehicleCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		700AF9E22668C63D008E73EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				700AF9E32668C63D008E73EA /* Employee.swift */,
+				70B498362668D67C00988C7B /* MapModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		700AF9E82668C63D008E73EA /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				700AF9E92668C63D008E73EA /* APIService.swift */,
+				70B4984026691E0A00988C7B /* SwiftyJSON.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		700AF9EA2668C63D008E73EA /* common */ = {
+			isa = PBXGroup;
+			children = (
+				70B498522669E1AD00988C7B /* UITaleviewAnimation */,
+				70B4984226692E5300988C7B /* style.json */,
+				700AF9EB2668C63D008E73EA /* DummyLatLong.json */,
+				700AF9EC2668C63D008E73EA /* AppDelegate.swift */,
+				700AF9ED2668C63D008E73EA /* SceneDelegate.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		700AF9EE2668C63D008E73EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70B4984426693C9B00988C7B /* UIViewControllerExtension.swift */,
+				70B498492669509900988C7B /* BottomSheetViewController.swift */,
+				700AF9EF2668C63D008E73EA /* ViewController.swift */,
+				70B498382668D72B00988C7B /* GoogleMapVC.swift */,
+				70B4983A2668D94A00988C7B /* Constants.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		70B498522669E1AD00988C7B /* UITaleviewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				70B498532669E1AD00988C7B /* AnimatorTVC.swift */,
+				70B498542669E1AD00988C7B /* UITableView+Ext.swift */,
+				70B498552669E1AD00988C7B /* Animations.swift */,
+			);
+			path = UITaleviewAnimation;
+			sourceTree = "<group>";
+		};
+		70B498602669ED4700988C7B /* TataMapDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				70B498612669ED4700988C7B /* TataMapDemoTests.swift */,
+				70B498632669ED4700988C7B /* Info.plist */,
+			);
+			path = TataMapDemoTests;
+			sourceTree = "<group>";
+		};
+		9108B3DC7182FF05120B8928 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C66F771946D949E98F0457EE /* Pods-TataMapDemo.debug.xcconfig */,
+				7EDC35DA53B183A1BC27466F /* Pods-TataMapDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		388A2FE924755072003E4341 /* TataMapDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 388A2FFE24755076003E4341 /* Build configuration list for PBXNativeTarget "TataMapDemo" */;
+			buildPhases = (
+				A022BB2B6D2D70BC80A88F5C /* [CP] Check Pods Manifest.lock */,
+				388A2FE624755072003E4341 /* Sources */,
+				388A2FE724755072003E4341 /* Frameworks */,
+				388A2FE824755072003E4341 /* Resources */,
+				3A1F6EA559B5C5222C1D3A31 /* [CP] Copy Pods Resources */,
+				0DDE808DA9A5EDCE180CB114 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TataMapDemo;
+			productName = MVVM_New;
+			productReference = 388A2FEA24755072003E4341 /* TataMapDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70B4985E2669ED4700988C7B /* TataMapDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70B498662669ED4700988C7B /* Build configuration list for PBXNativeTarget "TataMapDemoTests" */;
+			buildPhases = (
+				70B4985B2669ED4700988C7B /* Sources */,
+				70B4985C2669ED4700988C7B /* Frameworks */,
+				70B4985D2669ED4700988C7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70B498652669ED4700988C7B /* PBXTargetDependency */,
+			);
+			name = TataMapDemoTests;
+			productName = TataMapDemoTests;
+			productReference = 70B4985F2669ED4700988C7B /* TataMapDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		388A2FE224755072003E4341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Abhilash Mathur";
+				TargetAttributes = {
+					388A2FE924755072003E4341 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					70B4985E2669ED4700988C7B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 388A2FE924755072003E4341;
+					};
+				};
+			};
+			buildConfigurationList = 388A2FE524755072003E4341 /* Build configuration list for PBXProject "TataMapDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 388A2FE124755072003E4341;
+			productRefGroup = 388A2FEB24755072003E4341 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				388A2FE924755072003E4341 /* TataMapDemo */,
+				70B4985E2669ED4700988C7B /* TataMapDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		388A2FE824755072003E4341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700AF9F72668C63D008E73EA /* Main.storyboard in Resources */,
+				700AF9F42668C63D008E73EA /* Assets.xcassets in Resources */,
+				700AF9F92668C63D008E73EA /* DummyLatLong.json in Resources */,
+				70B4984F2669DAB200988C7B /* ListOfVehicleCell.xib in Resources */,
+				70B4984326692E5300988C7B /* style.json in Resources */,
+				700AF9F62668C63D008E73EA /* LaunchScreen.storyboard in Resources */,
+				70B4984826694F2200988C7B /* BottomSheetViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B4985D2669ED4700988C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DDE808DA9A5EDCE180CB114 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TataMapDemo/Pods-TataMapDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TataMapDemo/Pods-TataMapDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TataMapDemo/Pods-TataMapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A1F6EA559B5C5222C1D3A31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TataMapDemo/Pods-TataMapDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TataMapDemo/Pods-TataMapDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TataMapDemo/Pods-TataMapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A022BB2B6D2D70BC80A88F5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TataMapDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		388A2FE624755072003E4341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700AF9FA2668C63D008E73EA /* AppDelegate.swift in Sources */,
+				70B4983B2668D94A00988C7B /* Constants.swift in Sources */,
+				70B4984526693C9B00988C7B /* UIViewControllerExtension.swift in Sources */,
+				700AF9FB2668C63D008E73EA /* SceneDelegate.swift in Sources */,
+				70B4983D2668E0D600988C7B /* MapsViewModel.swift in Sources */,
+				700AF9F22668C63D008E73EA /* EmployeesViewModel.swift in Sources */,
+				70B498582669E1AD00988C7B /* Animations.swift in Sources */,
+				70B498572669E1AD00988C7B /* UITableView+Ext.swift in Sources */,
+				70B498562669E1AD00988C7B /* AnimatorTVC.swift in Sources */,
+				70B4984126691E0A00988C7B /* SwiftyJSON.swift in Sources */,
+				70B4984A2669509900988C7B /* BottomSheetViewController.swift in Sources */,
+				700AF9F82668C63D008E73EA /* APIService.swift in Sources */,
+				70B498392668D72B00988C7B /* GoogleMapVC.swift in Sources */,
+				70B4983F2668E3FD00988C7B /* MapsDataSource.swift in Sources */,
+				700AF9F52668C63D008E73EA /* Employee.swift in Sources */,
+				700AF9F12668C63D008E73EA /* EmployeeTableViewDataSource.swift in Sources */,
+				700AF9FC2668C63D008E73EA /* ViewController.swift in Sources */,
+				70B498512669DB1D00988C7B /* ListOfVehicleCell.swift in Sources */,
+				70B498372668D67C00988C7B /* MapModelData.swift in Sources */,
+				700AF9F32668C63D008E73EA /* EmployeeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B4985B2669ED4700988C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B498622669ED4700988C7B /* TataMapDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70B498652669ED4700988C7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 388A2FE924755072003E4341 /* TataMapDemo */;
+			targetProxy = 70B498642669ED4700988C7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		700AF9E42668C63D008E73EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				700AF9E52668C63D008E73EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		700AF9E62668C63D008E73EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				700AF9E72668C63D008E73EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70B4984626694F2200988C7B /* BottomSheetViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70B4984726694F2200988C7B /* Base */,
+			);
+			name = BottomSheetViewController.xib;
+			sourceTree = "<group>";
+		};
+		70B4984D2669DAB200988C7B /* ListOfVehicleCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70B4984E2669DAB200988C7B /* Base */,
+			);
+			name = ListOfVehicleCell.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		388A2FFC24755076003E4341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		388A2FFD24755076003E4341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		388A2FFF24755076003E4341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C66F771946D949E98F0457EE /* Pods-TataMapDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R2W2P8U6CY;
+				INFOPLIST_FILE = "$(SRCROOT)/MapDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tataaig.mapdemo.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		388A300024755076003E4341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDC35DA53B183A1BC27466F /* Pods-TataMapDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R2W2P8U6CY;
+				INFOPLIST_FILE = "$(SRCROOT)/MapDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tataaig.mapdemo.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70B498672669ED4700988C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TataMapDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TATA.TataMapDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TataMapDemo.app/TataMapDemo";
+			};
+			name = Debug;
+		};
+		70B498682669ED4700988C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TataMapDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TATA.TataMapDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TataMapDemo.app/TataMapDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		388A2FE524755072003E4341 /* Build configuration list for PBXProject "TataMapDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388A2FFC24755076003E4341 /* Debug */,
+				388A2FFD24755076003E4341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		388A2FFE24755076003E4341 /* Build configuration list for PBXNativeTarget "TataMapDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				388A2FFF24755076003E4341 /* Debug */,
+				388A300024755076003E4341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70B498662669ED4700988C7B /* Build configuration list for PBXNativeTarget "TataMapDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70B498672669ED4700988C7B /* Debug */,
+				70B498682669ED4700988C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 388A2FE224755072003E4341 /* Project object */;
+}
