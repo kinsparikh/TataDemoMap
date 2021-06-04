@@ -30,13 +30,13 @@
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "updateDataSource()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "2E6296DA-E383-4E72-A6C3-631CFB8A08CC - f3469cfeb7de6cf3"
+                  uuid = "2E6296DA-E383-4E72-A6C3-631CFB8A08CC - f3469cfeb7de6d1e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -46,12 +46,12 @@
                   urlString = "file:///Users/kayaan/Documents/New%20Works/TATA%20Map%20Demo/MapDemo/Controllers/GoogleMapVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
                   offsetFromSymbolStart = "44">
                </Location>
                <Location
-                  uuid = "2E6296DA-E383-4E72-A6C3-631CFB8A08CC - 90d44af559451ecc"
+                  uuid = "2E6296DA-E383-4E72-A6C3-631CFB8A08CC - 90d44af559451f67"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -61,8 +61,8 @@
                   urlString = "file:///Users/kayaan/Documents/New%20Works/TATA%20Map%20Demo/MapDemo/Controllers/GoogleMapVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -88,14 +88,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "75792656-15F3-48A4-8089-708E1049ECB0"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "callToViewModelForUIUpdate()"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
             landmarkName = "didTapMyLocationButton(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "292"
-            endingLineNumber = "292"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
             landmarkName = "mapView(_:didTapInfoWindowOf:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "274"
-            endingLineNumber = "274"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
             landmarkName = "mapView(_:didEndDragging:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
             landmarkName = "mapView(_:didBeginDragging:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
+            startingLineNumber = "278"
+            endingLineNumber = "278"
             landmarkName = "mapView(_:didDrag:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "mapView(_:idleAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -200,14 +200,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5F31D2A9-AA0C-4F67-A6CF-9912C6E7132B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "mapView(_:idleAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -216,19 +216,19 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FC151FA6-603C-4BC0-BDF5-DC43828ACA89"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MapDemo/Controllers/GoogleMapVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "mapView(_:idleAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FC151FA6-603C-4BC0-BDF5-DC43828ACA89 - f9aa11097aba263f"
+                  uuid = "FC151FA6-603C-4BC0-BDF5-DC43828ACA89 - f9aa11097aba26fd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -238,12 +238,12 @@
                   urlString = "file:///Users/kayaan/Documents/New%20Works/TATA%20Map%20Demo/MapDemo/Controllers/GoogleMapVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "204"
-                  endingLineNumber = "204"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
                   offsetFromSymbolStart = "342">
                </Location>
                <Location
-                  uuid = "FC151FA6-603C-4BC0-BDF5-DC43828ACA89 - 2530c20dbaabc415"
+                  uuid = "FC151FA6-603C-4BC0-BDF5-DC43828ACA89 - 2530c20dbaabc4d7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -253,8 +253,8 @@
                   urlString = "file:///Users/kayaan/Documents/New%20Works/TATA%20Map%20Demo/MapDemo/Controllers/GoogleMapVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "205"
-                  endingLineNumber = "205"
+                  startingLineNumber = "207"
+                  endingLineNumber = "207"
                   offsetFromSymbolStart = "255">
                </Location>
             </Locations>
@@ -274,38 +274,6 @@
             endingLineNumber = "33"
             landmarkName = "testPerformanceExample()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A923DB15-5B61-4771-9C30-B796438DF194 - 54a606358459356a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TataMapDemoTests.TataMapDemoTests.testPerformanceExample() throws -&gt; ()"
-                  moduleName = "TataMapDemoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kayaan/Documents/New%20Works/TATA%20Map%20Demo/TataMapDemoTests/TataMapDemoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "67">
-               </Location>
-               <Location
-                  uuid = "A923DB15-5B61-4771-9C30-B796438DF194 - bddaf3424d77b5c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in TataMapDemoTests.TataMapDemoTests.testPerformanceExample() throws -&gt; ()"
-                  moduleName = "TataMapDemoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kayaan/Documents/New%20Works/TATA%20Map%20Demo/TataMapDemoTests/TataMapDemoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -369,6 +337,150 @@
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "testValidApiCallGetsHTTPStatusCode200()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54115773-DF5C-485B-B391-8B52EA594649"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MapDemo/Controllers/BottomSheetViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF896493-3203-4087-B18B-B6727DF3843A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MapDemo/Controllers/BottomSheetViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C0CCF0C-4F58-402C-9DEF-90F0DCA0B5A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MapDemo/Controllers/GoogleMapVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
+            landmarkName = "mapView(_:willMove:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA1A157F-6BB9-45C6-85A9-4EA1843A06C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MapDemo/Controllers/GoogleMapVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "callToViewModelForUIUpdate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A1FBB85-C61F-4AE2-A356-F83018F80846"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MapDemo/Controllers/GoogleMapVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "addBottomSheetView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1E6BA80-D699-4CFE-8324-F021F2D0D063"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MapDemo/Controllers/GoogleMapVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "callToViewModelForUIUpdate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C1E6BA80-D699-4CFE-8324-F021F2D0D063 - fd5d6f0e9d5377a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TataMapDemo.GoogleMapVC.callToViewModelForUIUpdate() -&gt; ()"
+                  moduleName = "TataMapDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kayaan/Documents/New%20Works/TATA%20Map%20Demo/MapDemo/Controllers/GoogleMapVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  uuid = "C1E6BA80-D699-4CFE-8324-F021F2D0D063 - 2074aa0cc2c7e862"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in TataMapDemo.GoogleMapVC.callToViewModelForUIUpdate() -&gt; ()"
+                  moduleName = "TataMapDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kayaan/Documents/New%20Works/TATA%20Map%20Demo/MapDemo/Controllers/GoogleMapVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97AF1E12-A06B-4C34-BC22-21A82C68E498"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MapDemo/Controllers/GoogleMapVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "addBottomSheetView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -23,7 +23,7 @@
                                 <rect key="frame" x="8" y="10" width="37.5" height="35"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFA-J5-fHz">
-                                <rect key="frame" x="50.5" y="5" width="360.5" height="49"/>
+                                <rect key="frame" x="55.5" y="5" width="355.5" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -31,7 +31,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aFA-J5-fHz" firstAttribute="leading" secondItem="yri-hU-NoR" secondAttribute="trailing" constant="5" id="STM-pJ-Byh"/>
+                            <constraint firstItem="aFA-J5-fHz" firstAttribute="leading" secondItem="yri-hU-NoR" secondAttribute="trailing" constant="10" id="STM-pJ-Byh"/>
                             <constraint firstItem="yri-hU-NoR" firstAttribute="top" secondItem="Had-Y5-Mdj" secondAttribute="top" constant="10" id="Z5B-qN-JUC"/>
                             <constraint firstItem="aFA-J5-fHz" firstAttribute="centerY" secondItem="Had-Y5-Mdj" secondAttribute="centerY" id="ZCP-0H-QIr"/>
                             <constraint firstItem="aFA-J5-fHz" firstAttribute="top" secondItem="Had-Y5-Mdj" secondAttribute="top" constant="5" id="cDb-Gv-FZp"/>

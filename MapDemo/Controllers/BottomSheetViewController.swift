@@ -1,6 +1,8 @@
 
 import UIKit
 
+import LocalAuthentication
+import CoreLocation
 
 struct OrderDetailEntryModel {
     
@@ -24,7 +26,13 @@ class BottomSheetViewController: UIViewController,UITableViewDelegate,UITableVie
     @IBOutlet weak var btnPooling: UIButton!
     @IBOutlet weak var btnAuto: UIButton!
     
-    var objUpdate = [OrderDetailEntryModel]()
+    @IBOutlet weak var lblTaxi: UILabel!
+    @IBOutlet weak var lblPool: UILabel!
+    @IBOutlet weak var lblAuto: UILabel!
+    
+//    var objUpdate = [OrderDetailEntryModel]()
+    var objUpdate = [PoiList]()
+    var dataSourceVehicle = [PoiList]()
     @IBOutlet weak var tblVehicles: UITableView!
     
     var fromMainView = false
@@ -37,14 +45,21 @@ class BottomSheetViewController: UIViewController,UITableViewDelegate,UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
-        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
-        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
-        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
-        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
-        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
-        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
-        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
+        
+        
+        
+//        newArrayTaxi = dataSourceVehicle.filter({$0.fleetType == "TAXI"}).compactMap({$0})
+//        newArrayPooling = dataSourceVehicle.filter({$0.fleetType == "POOLING"}).compactMap({$0})
+//        print("NEW TAXI : ",newArrayTaxi.count, "NEW Pool : ", newArrayPooling.count)
+        
+//        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
+//        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
+//        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
+//        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
+//        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
+//        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
+//        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
+//        objUpdate.append(OrderDetailEntryModel(title : "Sector 36, Kharghar, Navi Mumbai 410210"))
 
         self.tblVehicles.register(UINib(nibName: "ListOfVehicleCell", bundle: nil), forCellReuseIdentifier: "ListOfVehicleCell")
         self.tblVehicles.rowHeight = UITableView.automaticDimension
@@ -68,12 +83,51 @@ class BottomSheetViewController: UIViewController,UITableViewDelegate,UITableVie
         view.addGestureRecognizer(gesture)
         
         
-       
+        objUpdate.removeAll()
+        objUpdate = dataSourceVehicle.filter({$0.fleetType == "TAXI"}).compactMap({$0})
+        print(objUpdate.count)
+        self.tblVehicles.reloadData()
     }
         
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.initialSetup()
+    }
+    
+    @IBAction func btnTaxiPressed() {
+        objUpdate.removeAll()
+        objUpdate = dataSourceVehicle.filter({$0.fleetType == "TAXI"}).map({$0})
+        print(objUpdate.count)
+        self.btnTaxi.isSelected = true
+        self.btnPooling.isSelected = false
+        self.btnAuto.isSelected = false
+        self.lblTaxi.textColor = .black
+        self.lblPool.textColor = .lightGray
+        self.lblAuto.textColor = .lightGray
+        self.tblVehicles.reloadData()
+    }
+    
+    @IBAction func btnPoolPressed() {
+        objUpdate.removeAll()
+        objUpdate = dataSourceVehicle.filter({$0.fleetType == "POOLING"}).map({$0})
+        print(objUpdate.count)
+        self.btnTaxi.isSelected = false
+        self.btnPooling.isSelected = true
+        self.btnAuto.isSelected = false
+        self.lblTaxi.textColor = .lightGray
+        self.lblPool.textColor = .black
+        self.lblAuto.textColor = .lightGray
+        self.tblVehicles.reloadData()
+    }
+    @IBAction func btnAutoPressed() {
+        objUpdate.removeAll()
+        self.btnTaxi.isSelected = false
+        self.btnPooling.isSelected = false
+        self.btnAuto.isSelected = true
+        self.lblTaxi.textColor = .lightGray
+        self.lblPool.textColor = .lightGray
+        self.lblAuto.textColor = .black
+        self.tblVehicles.reloadData()
     }
     
     
@@ -88,12 +142,13 @@ class BottomSheetViewController: UIViewController,UITableViewDelegate,UITableVie
       }
 
        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-          if objUpdate.count == 0 {
-              self.tblVehicles.setEmptyMessage("No updates are available this time..!")
-             } else {
-                 self.tblVehicles.restore()
-             }
+        if objUpdate.count == 0 {
+              self.tblVehicles.setEmptyMessage("No vehicles are available this time..!")
+          } else {
+              self.tblVehicles.restore()
+          }
 
+        
              return objUpdate.count
       }
        
@@ -105,12 +160,64 @@ class BottomSheetViewController: UIViewController,UITableViewDelegate,UITableVie
         let animator = AnimatorTVC(animation: animation)
         animator.animate(cell: cell, at: indexPath, in: tableView)
         
-        cell.lblPlace.text = self.objUpdate[indexPath.row].title
-         
+        if("\(self.objUpdate[indexPath.row].fleetType ?? "")" == "TAXI"){
+            cell.imgVehicle?.image = #imageLiteral(resourceName: "cabNew")
+        }else if ("\(self.objUpdate[indexPath.row].fleetType ?? "")" == "POOLING"){
+            cell.imgVehicle?.image = #imageLiteral(resourceName: "carPool")
+        }else{
+            cell.imgVehicle?.image = #imageLiteral(resourceName: "rickshaw")
+        }
+        
+        var center : CLLocationCoordinate2D = CLLocationCoordinate2D()
+        let lat: Double = Double("\(self.objUpdate[indexPath.row].coordinate?.latitude ?? 0.0)")!
+        
+        let lon: Double = Double("\(self.objUpdate[indexPath.row].coordinate?.longitude ?? 0.0)")!
+        
+        let ceo: CLGeocoder = CLGeocoder()
+        center.latitude = lat
+        center.longitude = lon
+
+        let loc: CLLocation = CLLocation(latitude:center.latitude, longitude: center.longitude)
+
+            var addressString = String()
+        ceo.reverseGeocodeLocation(loc, completionHandler:{   (placemarks, error) in
+                if (error != nil)
+                {
+                    print("reverse geodcode fail: \(error!.localizedDescription)")
+                }
+            if placemarks  != nil {
+                let pm = placemarks! as [CLPlacemark]
+
+                    if pm.count > 0 {
+                        let pm = placemarks![0]
+                        if pm.subLocality != nil {
+                            addressString = addressString + pm.subLocality! + ", "
+                        }
+                        if pm.thoroughfare != nil {
+                            addressString = addressString + pm.thoroughfare! + ", "
+                        }
+                        if pm.locality != nil {
+                            addressString = addressString + pm.locality! + ", "
+                        }
+                        if pm.country != nil {
+                            addressString = addressString + pm.country! + ", "
+                        }
+                        if pm.postalCode != nil {
+                            addressString = addressString + pm.postalCode! + " "
+                        }
+                        //print(addressString)
+                        cell.lblPlace.text = "\(addressString)"
+                  }
+            }
+                
+        })
+      
+            
           cell.innerView.setCardView()
           
           return cell
       }
+    
     
     @objc func imageArrowTapped(){
         UIView.animate(withDuration: 0.6, animations: { [weak self] in
@@ -131,9 +238,12 @@ class BottomSheetViewController: UIViewController,UITableViewDelegate,UITableVie
         })
         
     }
+    
+    
+    
     func initialSetup()
     {
-        fullView = 300
+        fullView = 320
         partialView = self.view.frame.size.height * 0.80
         UIView.animate(withDuration: 0.6, animations: { [weak self] in
          let frame = self?.view.frame
@@ -266,5 +376,7 @@ class BottomSheetViewController: UIViewController,UITableViewDelegate,UITableVie
                 }, completion: nil)
         }
     }
+    
+    
     
 }

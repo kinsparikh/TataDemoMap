@@ -31,7 +31,7 @@ class GoogleMapVC: UIViewController {
         self.locationManager.delegate = self
         self.locationManager.requestWhenInUseAuthorization()
         callToViewModelForUIUpdate()
-        addBottomSheetView()
+        
         geoCoder = CLGeocoder()
 //        self.mapView.bringSubviewToFront(pinImage)
         styleGoogleMap()
@@ -59,7 +59,15 @@ class GoogleMapVC: UIViewController {
 //
 //           }
 //        }
+        
+        if self.children.count > 0{
+             let viewControllers:[UIViewController] = self.children
+                viewControllers.last?.willMove(toParent: nil)
+                viewControllers.last?.removeFromParent()
+                viewControllers.last?.view.removeFromSuperview()
+         }
         bottomSheetVC.fromMainView = true
+        bottomSheetVC.dataSourceVehicle = self.mapsViewModel.mapsData.poiList ?? []
         bottomSheetVC.view.makeCorner(withRadius: 20.0)
         self.addChild(bottomSheetVC)
         self.view.addSubview(bottomSheetVC.view)
@@ -91,7 +99,10 @@ class GoogleMapVC: UIViewController {
         self.mapsViewModel.bindMapsViewModelToController = {
 //            self.updateDataSource()
             DispatchQueue.main.async {
+                if self.mapsViewModel.mapsData.poiList?.count ?? 0 > 0 {
                 self.showCurrentLocationOnMap(poiList: self.mapsViewModel.mapsData.poiList ?? [])
+                self.addBottomSheetView()
+                }
             }
             
         }
@@ -279,9 +290,9 @@ extension GoogleMapVC: GMSMapViewDelegate {
        // mapCenterPinImage.fadeIn(0.25)
         
         
-        let camera = GMSCameraPosition.camera(withLatitude: Double(self.mapsViewModel.mapsData.poiList?[0].coordinate?.latitude ?? 0.0).rounded(toPlaces: 5), longitude: Double(self.mapsViewModel.mapsData.poiList?[0].coordinate?.longitude ?? 0.0).rounded(toPlaces: 5), zoom: 8.0)
+//        let camera = GMSCameraPosition.camera(withLatitude: Double(self.mapsViewModel.mapsData.poiList?[0].coordinate?.latitude ?? 0.0).rounded(toPlaces: 5), longitude: Double(self.mapsViewModel.mapsData.poiList?[0].coordinate?.longitude ?? 0.0).rounded(toPlaces: 5), zoom: 8.0)
         mapView.animate(toLocation: CLLocationCoordinate2DMake(Double(self.mapsViewModel.mapsData.poiList?[0].coordinate?.latitude ?? 0.0).rounded(toPlaces: 5), Double(self.mapsViewModel.mapsData.poiList?[0].coordinate?.longitude ?? 0.0).rounded(toPlaces: 5)))
-        mapView.camera = camera
+//        mapView.camera = camera
         mapView.selectedMarker = nil
         
         return false

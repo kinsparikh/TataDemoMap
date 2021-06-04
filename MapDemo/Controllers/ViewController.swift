@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     
     private var employeeViewModel : EmployeesViewModel!
     
-    private var dataSource : EmployeeTableViewDataSource<EmployeeTableViewCell,EmployeeData>!
-    
+    private var dataSource : VehicleTableViewDataSource<VehicleTableViewCell,EmployeeData>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
     
     func updateDataSource(){
         
-        self.dataSource = EmployeeTableViewDataSource(cellIdentifier: "EmployeeTableViewCell", items: self.employeeViewModel.empData.data, configureCell: { (cell, evm) in
+        self.dataSource = VehicleTableViewDataSource(cellIdentifier: "VehicleTableViewCell", items: self.employeeViewModel.empData.data, configureCell: { (cell, evm) in
             cell.employeeIdLabel.text = "\(evm.id)"
             cell.employeeNameLabel.text = evm.employeeName
         })

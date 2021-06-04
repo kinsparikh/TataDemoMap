@@ -14,6 +14,9 @@
                 <outlet property="btnPooling" destination="454-Hc-7N9" id="guM-92-hAR"/>
                 <outlet property="btnTaxi" destination="ql3-bg-HHW" id="6fV-Yc-MbH"/>
                 <outlet property="imgArrow" destination="c3h-Cy-trk" id="V3U-NK-ujD"/>
+                <outlet property="lblAuto" destination="nLS-Aa-UsI" id="flN-yb-hFj"/>
+                <outlet property="lblPool" destination="DJ0-ya-taR" id="39z-L5-yiK"/>
+                <outlet property="lblTaxi" destination="eHl-ZI-qc5" id="eef-4R-xWj"/>
                 <outlet property="svCar" destination="eKJ-KQ-VKy" id="8Ro-wx-Rb4"/>
                 <outlet property="tblVehicles" destination="n4s-H8-T0K" id="kQh-dI-aXs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -40,23 +43,26 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YvZ-IG-oHm">
                                     <rect key="frame" x="0.0" y="0.0" width="116" height="55"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql3-bg-HHW">
+                                        <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql3-bg-HHW">
                                             <rect key="frame" x="0.0" y="0.0" width="116" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="sP2-Z2-Vdd"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                            <state key="normal" image="cabNew">
+                                            <state key="normal" image="taxiDeselect">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
-                                            <state key="selected">
+                                            <state key="selected" image="cabNew">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="btnTaxiPressed" destination="-1" eventType="touchUpInside" id="gds-Mm-ADK"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHl-ZI-qc5">
                                             <rect key="frame" x="0.0" y="37" width="116" height="18"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -70,17 +76,20 @@
                                                 <constraint firstAttribute="height" constant="35" id="dUS-oO-vFb"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                            <state key="normal" image="carPool">
+                                            <state key="normal" image="carPoolDeselect">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
-                                            <state key="selected">
+                                            <state key="selected" image="carPool">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="btnPoolPressed" destination="-1" eventType="touchUpInside" id="ICH-HS-mUE"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJ0-ya-taR">
                                             <rect key="frame" x="0.0" y="35" width="116" height="20"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -94,17 +103,20 @@
                                                 <constraint firstAttribute="height" constant="35" id="qv4-SH-LFg"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                            <state key="normal" image="rickshaw">
+                                            <state key="normal" image="rickshawDeselect">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
-                                            <state key="selected">
+                                            <state key="selected" image="rickshaw">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="btnAutoPressed" destination="-1" eventType="touchUpInside" id="KpC-Mb-nJ5"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Auto Rikshaw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLS-Aa-UsI">
                                             <rect key="frame" x="0.0" y="35" width="116" height="20"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -144,8 +156,11 @@
     <resources>
         <image name="cabNew" width="37.5" height="37.5"/>
         <image name="carPool" width="37.5" height="37.5"/>
+        <image name="carPoolDeselect" width="37.5" height="37.5"/>
         <image name="pullArrowUp" width="50" height="16"/>
         <image name="rickshaw" width="37.5" height="37.5"/>
+        <image name="rickshawDeselect" width="37.5" height="37.5"/>
+        <image name="taxiDeselect" width="37.5" height="37.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
